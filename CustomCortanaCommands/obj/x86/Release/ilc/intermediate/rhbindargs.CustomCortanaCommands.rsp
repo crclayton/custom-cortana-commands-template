@@ -1,0 +1,16 @@
+/osver:6.2
+/appcontainer
+/runtime:mrt100_app
+/eh:clr
+/pdb
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Native\vmath.lib"
+/methodBodyFolding
+"C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\MDIL\CustomCortanaCommands.mdilexe"
+"/i:C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\MDIL\"
+/out:"C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\Native\CustomCortanaCommands.exe"
+"/res:C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\Native.res"
+/standalone
+/shimexe
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Native\Interop.Native.lib"
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Native\corelib.native.lib"
+"/nativelink:C:\Program Files (x86)\MSBuild\Microsoft\.NetNative\x86\ilc\lib\Native\TypeLoader.Native.lib"

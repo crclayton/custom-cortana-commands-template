@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
+  <CommandSet xml:lang="en-us" Name="CustomCommandSet">
+   <CommandPrefix> Listen Up </CommandPrefix>
+    <Example> You can list example commands here. </Example>
+    
+    <Command Name="ShutDownComputer">
+      <Example> shut down, power off, I'm going to bed </Example>    
+      
+      <ListenFor>Shut down</ListenFor>
+      <ListenFor>Power off</ListenFor>
+      <ListenFor>I'm going to bed</ListenFor>
+    
+       <!-- this starts with "Alright" -->
+      <Feedback> I'll turn myself off </Feedback>
+
+      <Navigate/>
+    
+    </Command>
+
+  </CommandSet>  
+
+</VoiceCommands>
