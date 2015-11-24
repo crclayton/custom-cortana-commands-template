@@ -9,9 +9,6 @@ using Windows.Media.SpeechRecognition;
 using Windows.ApplicationModel.VoiceCommands;
 using Windows.Storage;
 
-using System.Diagnostics;
-using Windows.UI.Popups;
-
 namespace CustomCortanaCommands
 {
     /// <summary>
@@ -76,17 +73,13 @@ namespace CustomCortanaCommands
             }
             // Ensure the current window is active
             Window.Current.Activate();
+        
 
-            try
-            {
-                StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"CustomVoiceCommandDefinitions.xml");
-                await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
-            }
-            catch (Exception ex)
-            {
-                Debug.Write("Failed to register custom voice commands because: " + ex.Message);
-            }
-
+            /*
+                Register Custom Cortana Commands from VCD file
+            */
+            StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"CustomVoiceCommandDefinitions.xml");
+            await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);            
         }
 
         protected async override void OnActivated(IActivatedEventArgs args)
@@ -97,23 +90,9 @@ namespace CustomCortanaCommands
             {
                 VoiceCommandActivatedEventArgs cmd = args as VoiceCommandActivatedEventArgs;
                 SpeechRecognitionResult result = cmd.Result;
-
                 string commandName = result.RulePath[0];
 
-                MessageDialog dialog = new MessageDialog("");
-
-                switch (commandName)
-                {
-                    case "ShutDownComputer":
-                        // this is where I would put the code to  shutdown the computer, for demo I'll just do a message box
-                        dialog.Content = "This is where I would shut the computer down";
-                        break;
-                    default:
-                        dialog.Content = "Couldn't find that command name";
-                        break;
-                }
-
-                await dialog.ShowAsync();
+                CortanaFunctions.vcdLookup[commandName].DynamicInvoke();
             }
         }
 

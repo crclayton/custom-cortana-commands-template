@@ -9,7 +9,7 @@
     <SolutionConfiguration>Release|x86</SolutionConfiguration>
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>22c57925-bd2a-4ebf-97e9-7a860ef17b3c</PackageIdentityName>
-    <IntermediateOutputPath>C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\</IntermediateOutputPath>
     <RegisteredManifestChecksum>06147135E2455224699408EB22E245BF9B7869E3D8B0A8EB80EFDB3DFA1D51EC</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>22c57925-bd2a-4ebf-97e9-7a860ef17b3c_1.0.0.0_x86__4h31kwvp0rte4</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>22c57925-bd2a-4ebf-97e9-7a860ef17b3c_4h31kwvp0rte4!App</RegisteredUserModeAppID>
@@ -19,70 +19,70 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2015-10-25T01:36:52.662</Modified>
+      <Modified>2015-11-24T20:33:25.232</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\ApplicationInsights.config">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2015-10-24T22:42:53.207</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2015-08-27T08:38:34.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\ClrCompression.dll">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\ClrCompression.dll">
       <PackagePath>ClrCompression.dll</PackagePath>
       <Modified>2015-10-24T22:41:43.540</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.dll">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.dll">
       <PackagePath>CustomCortanaCommands.dll</PackagePath>
-      <Modified>2015-10-25T01:36:50.609</Modified>
+      <Modified>2015-11-24T20:33:24.381</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.exe">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.exe">
       <PackagePath>CustomCortanaCommands.exe</PackagePath>
-      <Modified>2015-10-25T01:36:51.723</Modified>
+      <Modified>2015-11-24T20:33:25.185</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\CustomVoiceCommandDefinitions.xml">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomVoiceCommandDefinitions.xml">
       <PackagePath>CustomVoiceCommandDefinitions.xml</PackagePath>
-      <Modified>2015-10-25T01:25:17.340</Modified>
+      <Modified>2015-11-24T20:30:03.918</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\bin\x86\Release\ilc\resources.pri">
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2015-10-24T23:16:48.718</Modified>
+      <Modified>2015-11-24T20:31:40.537</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

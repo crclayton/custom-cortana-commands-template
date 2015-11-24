@@ -1,9 +1,9 @@
 /ignoreAccessChecks
-/metadataFile "C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.metadata"
+/metadataFile "C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.metadata"
 /gvmAssemblyName "System.Private.CoreLib"
 /o
 /sharedGenerics
-/ilmergeinfo "C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.csv"
+/ilmergeinfo "C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.csv"
 /sharedGenericsMode StandardHeuristics
-/in "C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.ilexe"
-/out "C:\Users\charl\Documents\Visual Studio 2015\Projects\CustomCortanaCommands\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\MDIL\CustomCortanaCommands.mdilexe"
+/in "C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\ILTransformed\CustomCortanaCommands.ilexe"
+/out "C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\MDIL\CustomCortanaCommands.mdilexe"

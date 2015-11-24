@@ -3691,27 +3691,27 @@ namespace McgInterop
 	//     + Total Forward Stubs = 857
 	//     + Total Reverse Stubs = 478 (47 shared stubs, 0 delegate to shared stubs. 478 normal stubs)
 	//     + Unshared Forward Stubs = 0
-	//     + Shared Forward Stubs = 1388
+	//     + Shared Forward Stubs = 1387
 	//     + Shared Target Forward Stubs = 810
-	//     + Shared Target Forward Stubs Cache Hit = 578
+	//     + Shared Target Forward Stubs Cache Hit = 577
 	// 
 	// Type/Method Data
 		//
 	//     + WinRT interfaces : 298
 	//     + WinRT classes : 118
 	//     + WinRT delegates : 35
-	//     + WinRT class methods : 407
+	//     + WinRT class methods : 406
 	//     + dispatch classes : 333
-	//     + dispatch methods : 823
+	//     + dispatch methods : 822
 	//     + stub classes : 520
-	//     + stub methods : 1397
+	//     + stub methods : 1396
 	//     + vtables : 708
-	//     + vtable methods : 1456
+	//     + vtable methods : 1455
 	// 
 	// Reducer Data
 		//
 	//     + discarded v-tables : 454
-	//     + discarded v-table methods : 1058
+	//     + discarded v-table methods : 1057
 	//     + discarded class methods : 0
 	//     + discarded dispatch class methods : 114
 	//     + discarded stub class methods : 9
