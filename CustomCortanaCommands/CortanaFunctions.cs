@@ -2,31 +2,59 @@
 using System.Collections.Generic;
 using Windows.UI.Popups;
 
+using Windows.Storage;
+using Windows.ApplicationModel;
+using Windows.ApplicationModel.VoiceCommands;
+
+using Windows.System;
+using Windows.Media.SpeechRecognition;
+using Windows.ApplicationModel.Activation;
 
 namespace CustomCortanaCommands
 {
 
     class CortanaFunctions
     {
-        /* This is the lookup of VCD CommandNames as defined in 
-        CustomVoiceCommandDefinitios.xml to their corresponding functions */
-        static public Dictionary<string, Delegate> vcdLookup = new Dictionary<string, Delegate>{
-            // {"CommandName", new Action(voidFunction)}
-            {"ShutDown", new Action(ShutDown)},
-            {"Hibernate", new Action(Hibernate) }
+        /*
+        This is the lookup of VCD CommandNames as defined in 
+        CustomVoiceCommandDefinitios.xml to their corresponding actions
+        */
+        public readonly static Dictionary<string, Delegate> vcdLookup = new Dictionary<string, Delegate>{
+
+            /*
+            {<command name from VCD>, (Action)(async () => {
+                 <code that runs when that commmand is called>
+            })}
+            */
+
+            {"OpenFile", (Action)(async () => {
+                StorageFile file = await Package.Current.InstalledLocation.GetFileAsync(@"Test.txt");
+                await Launcher.LaunchFileAsync(file);
+            })},
+
+            {"OpenWebsite", (Action)(async () => { 
+                 Uri website = new Uri(@"http://www.reddit.com");
+                 await Launcher.LaunchUriAsync(website);
+             })},
         };
 
-        static async void ShutDown()
+        /*
+        Register Custom Cortana Commands from VCD file
+        */
+        public static async void RegisterVCD()
         {
-            var dialog = new MessageDialog("This is where I would shut the computer down.");
-            await dialog.ShowAsync();
+            StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"CustomVoiceCommandDefinitions.xml");
+            await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
         }
 
-        static async void Hibernate()
+        /*
+        Look up the spoken command and execute its corresponding action
+        */
+        public static void RunCommand(VoiceCommandActivatedEventArgs cmd)
         {
-            var dialog = new MessageDialog("This is where I would hibernate the computer.");
-            await dialog.ShowAsync();
+            SpeechRecognitionResult result = cmd.Result;
+            string commandName = result.RulePath[0];
+            vcdLookup[commandName].DynamicInvoke();
         }
-
     }
 }

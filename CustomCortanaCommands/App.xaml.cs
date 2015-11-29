@@ -6,8 +6,6 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
 
 using Windows.Media.SpeechRecognition;
-using Windows.ApplicationModel.VoiceCommands;
-using Windows.Storage;
 
 namespace CustomCortanaCommands
 {
@@ -34,7 +32,7 @@ namespace CustomCortanaCommands
         /// will be used such as when the application is launched to open a specific file.
         /// </summary>
         /// <param name="e">Details about the launch request and process.</param>
-        protected async override void OnLaunched(LaunchActivatedEventArgs e)
+        protected override void OnLaunched(LaunchActivatedEventArgs e)
         {
 
 #if DEBUG
@@ -73,26 +71,17 @@ namespace CustomCortanaCommands
             }
             // Ensure the current window is active
             Window.Current.Activate();
-        
 
-            /*
-                Register Custom Cortana Commands from VCD file
-            */
-            StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"CustomVoiceCommandDefinitions.xml");
-            await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);            
+            CortanaFunctions.RegisterVCD();      
         }
 
-        protected async override void OnActivated(IActivatedEventArgs args)
+        protected override void OnActivated(IActivatedEventArgs args)
         {
             base.OnActivated(args);
 
             if (args.Kind == ActivationKind.VoiceCommand)
             {
-                VoiceCommandActivatedEventArgs cmd = args as VoiceCommandActivatedEventArgs;
-                SpeechRecognitionResult result = cmd.Result;
-                string commandName = result.RulePath[0];
-
-                CortanaFunctions.vcdLookup[commandName].DynamicInvoke();
+                CortanaFunctions.RunCommand(args as VoiceCommandActivatedEventArgs);
             }
         }
 

@@ -646,3 +646,6 @@ C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-tem
 C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\TransformedCoreLib\System.Private.CoreLib.pdb
 C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\TransformedCoreLib\System.Runtime.dll
 C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\intermediate\TransformedCoreLib\System.Runtime.Implementation.dll
+C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Test.txt
+C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\obj\x86\Release\ilc\in\Test.txt
+C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\Test.txt

@@ -63,6 +63,9 @@
     <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\Test.txt">
+      <PackagePath>Test.txt</PackagePath>
+    </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
     <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows Kits\10\ExtensionSDKs\Microsoft.NET.Native.Runtime.1.1\1.1\">

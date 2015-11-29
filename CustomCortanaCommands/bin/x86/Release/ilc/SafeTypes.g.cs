@@ -6691,6 +6691,88 @@ namespace Windows.Storage.Streams
 	}
 }
 
+namespace Windows.System
+{
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe sealed class Launcher : global::System.__ComObject
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.Foundation.IAsyncOperation<bool> LaunchFileAsync(global::Windows.Storage.IStorageFile file)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> retval;
+			retval = __Factory_Windows_System__ILauncherStatics_LaunchFileAsync(
+								"Windows.System.Launcher", 
+								file
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.Foundation.IAsyncOperation<bool> __Factory_Windows_System__ILauncherStatics_LaunchFileAsync(
+					string typeName, 
+					global::Windows.Storage.IStorageFile file)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> __pRetVal;
+			__pRetVal = global::Windows.System.ILauncherStatics__Impl.StubClass.LaunchFileAsync(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.System.ILauncherStatics).TypeHandle
+												), 
+								file
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		public static global::Windows.Foundation.IAsyncOperation<bool> LaunchUriAsync(global::System.Uri uri)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> retval;
+			retval = __Factory_Windows_System__ILauncherStatics_LaunchUriAsync(
+								"Windows.System.Launcher", 
+								uri
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return retval;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		static global::Windows.Foundation.IAsyncOperation<bool> __Factory_Windows_System__ILauncherStatics_LaunchUriAsync(
+					string typeName, 
+					global::System.Uri uri)
+		{
+			global::Windows.Foundation.IAsyncOperation<bool> __pRetVal;
+			__pRetVal = global::Windows.System.ILauncherStatics__Impl.StubClass.LaunchUriAsync(
+								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
+													typeName, 
+													typeof(global::Windows.System.ILauncherStatics).TypeHandle
+												), 
+								uri
+							);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __pRetVal;
+		}
+
+		public Launcher(global::System.IntPtr dummy)
+		{
+		}
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ILauncherStatics
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<bool> LaunchFileAsync(global::Windows.Storage.IStorageFile file);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.Foundation.IAsyncOperation<bool> LaunchUriAsync(global::System.Uri uri);
+	}
+}
+
 namespace Windows.System.Profile
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.System.Profile.IHardwareToken))]
@@ -7146,81 +7228,6 @@ namespace Windows.UI.Core
 		High = 1,
 		Idle = -2,
 		Low = -1,
-	}
-}
-
-namespace Windows.UI.Popups
-{
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Popups.IMessageDialog))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class MessageDialog : global::System.__ComObject, global::Windows.UI.Popups.IMessageDialog
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.CompilerServices.MethodImpl(global::System.Runtime.CompilerServices.MethodImplOptions.NoInlining)]
-		public MessageDialog(string content)
-		{
-			global::System.IntPtr retval;
-			retval = __Factory_Windows_UI_Popups__IMessageDialogFactory_Create(
-								"Windows.UI.Popups.MessageDialog", 
-								content
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			this.__AttachAndRelease(retval);
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr __Factory_Windows_UI_Popups__IMessageDialogFactory_Create(
-					string typeName, 
-					string content)
-		{
-			global::System.IntPtr __pRetVal;
-			__pRetVal = global::Windows.UI.Popups.IMessageDialogFactory__Impl.StubClass.Create(
-								global::System.Runtime.InteropServices.McgModuleManager.GetActivationFactory(
-													typeName, 
-													typeof(global::Windows.UI.Popups.IMessageDialogFactory).TypeHandle
-												), 
-								content
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			global::McgInterop.McgHelpers.GetIUnknownForFactoryReturn(ref __pRetVal);
-			return __pRetVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> __retVal = global::Windows.UI.Popups.IMessageDialog__Impl.StubClass.ShowAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public MessageDialog(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IMessageDialogFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr Create(string content);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IMessageDialog
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.UI.Popups.IUICommand> ShowAsync();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IUICommand
-	{
 	}
 }
 

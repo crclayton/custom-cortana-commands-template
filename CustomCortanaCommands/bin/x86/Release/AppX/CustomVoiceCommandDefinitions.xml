@@ -29,6 +29,56 @@
       <Navigate/>    
       
     </Command>
+    
+    
+    <Command Name="OpenFile">
+      <Example> Open file </Example>          
+      <ListenFor> Open file </ListenFor>    
+      <Feedback> Opening your file </Feedback>
+      <Navigate/>          
+    </Command>
+    
+        <Command Name="OpenFolder">
+      <Example> Open folder </Example>          
+      <ListenFor> Open folder </ListenFor>    
+      <Feedback> Opening your folder </Feedback>
+      <Navigate/>          
+    </Command>
+
+    <Command Name="OpenWebsite">
+      <Example> Open website </Example>          
+      <ListenFor> Open website </ListenFor>    
+      <Feedback> Opening your website </Feedback>
+      <Navigate/>          
+    </Command>
+
+    <Command Name="OpenScript">
+      <Example> Open script </Example>          
+      <ListenFor> Open script </ListenFor>    
+      <Feedback> Opening your script </Feedback>
+      <Navigate/>          
+    </Command>
+    
+        <Command Name="OpenBatch">
+      <Example> Open Batch </Example>          
+      <ListenFor> Open Batch </ListenFor>    
+      <Feedback> Opening your Batch </Feedback>
+      <Navigate/>          
+    </Command>
+
+            <Command Name="OpenHTML">
+      <Example> Open HTML </Example>          
+      <ListenFor> Open HTML </ListenFor>    
+      <Feedback> Opening your HTML </Feedback>
+      <Navigate/>          
+    </Command>
+    
+                <Command Name="OpenHTA">
+      <Example> Open HTA </Example>          
+      <ListenFor> Open HTA </ListenFor>    
+      <Feedback> Opening your HTA </Feedback>
+      <Navigate/>          
+    </Command>
 
     
   </CommandSet>  
