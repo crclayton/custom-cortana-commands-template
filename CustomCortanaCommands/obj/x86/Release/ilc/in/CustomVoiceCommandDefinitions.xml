@@ -2,7 +2,7 @@
 
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="CustomCommands">
-   <CommandPrefix> Listen Here </CommandPrefix>
+   <CommandPrefix> Listen Up </CommandPrefix>
     <Example> Open File, Open Website </Example>
     
     

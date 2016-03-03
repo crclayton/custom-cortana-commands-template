@@ -1,1 +1,1 @@
-C:\Users\charl\Documents\Visual Studio 2015\Projects\custom-cortana-commands-template\CustomCortanaCommands\CustomCortanaCommands.csproj;x86
+C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\CustomCortanaCommands.csproj;x86

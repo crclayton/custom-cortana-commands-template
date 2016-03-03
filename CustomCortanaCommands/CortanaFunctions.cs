@@ -19,7 +19,7 @@ namespace CustomCortanaCommands
         This is the lookup of VCD CommandNames as defined in 
         CustomVoiceCommandDefinitios.xml to their corresponding actions
         */
-        public readonly static Dictionary<string, Delegate> vcdLookup = new Dictionary<string, Delegate>{
+        private readonly static IReadOnlyDictionary<string, Delegate> vcdLookup = new Dictionary<string, Delegate>{
 
             /*
             {<command name from VCD>, (Action)(async () => {
@@ -43,8 +43,11 @@ namespace CustomCortanaCommands
         */
         public static async void RegisterVCD()
         {
-            StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(@"CustomVoiceCommandDefinitions.xml");
-            await VoiceCommandDefinitionManager.InstallCommandDefinitionsFromStorageFileAsync(vcd);
+            StorageFile vcd = await Package.Current.InstalledLocation.GetFileAsync(
+                @"CustomVoiceCommandDefinitions.xml");
+
+            await VoiceCommandDefinitionManager
+                .InstallCommandDefinitionsFromStorageFileAsync(vcd);
         }
 
         /*

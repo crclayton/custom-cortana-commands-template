@@ -49,761 +49,8 @@ using System.Runtime.InteropServices.WindowsRuntime;
 // warning CS0628 new protected member declared in sealed class
 #pragma warning disable 628
 
-namespace Interop
-{
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+_EXCEPTION_RECORD,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50" +
-		"a3a")]
-	public unsafe partial struct _EXCEPTION_RECORD__System_Private_CoreLib
-	{
-		public uint ExceptionCode;
-		public uint ExceptionFlags;
-		public global::System.IntPtr ExceptionRecord;
-		public global::System.IntPtr ExceptionAddress;
-		public uint NumberParameters;
-		public global::Interop.InlineArray_ULONG_PTR_15__System_Private_CoreLib ExceptionInformation;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+InlineArray_ULONG_PTR_15,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f" +
-		"7f11d50a3a")]
-	public unsafe partial struct InlineArray_ULONG_PTR_15__System_Private_CoreLib
-	{
-		public global::System.UIntPtr elem_0;
-		public global::System.UIntPtr elem_1;
-		public global::System.UIntPtr elem_2;
-		public global::System.UIntPtr elem_3;
-		public global::System.UIntPtr elem_4;
-		public global::System.UIntPtr elem_5;
-		public global::System.UIntPtr elem_6;
-		public global::System.UIntPtr elem_7;
-		public global::System.UIntPtr elem_8;
-		public global::System.UIntPtr elem_9;
-		public global::System.UIntPtr elem_10;
-		public global::System.UIntPtr elem_11;
-		public global::System.UIntPtr elem_12;
-		public global::System.UIntPtr elem_13;
-		public global::System.UIntPtr elem_14;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+_CONTEXT,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-	public unsafe partial struct _CONTEXT__System_Private_CoreLib
-	{
-		public uint ContextFlags;
-		public uint Dr0;
-		public uint Dr1;
-		public uint Dr2;
-		public uint Dr3;
-		public uint Dr6;
-		public uint Dr7;
-		public global::Interop._FLOATING_SAVE_AREA__System_Private_CoreLib FloatSave;
-		public uint SegGs;
-		public uint SegFs;
-		public uint SegEs;
-		public uint SegDs;
-		public uint Edi;
-		public uint Esi;
-		public uint Ebx;
-		public uint Edx;
-		public uint Ecx;
-		public uint Eax;
-		public uint Ebp;
-		public uint Eip;
-		public uint SegCs;
-		public uint EFlags;
-		public uint Esp;
-		public uint SegSs;
-		public global::Interop.InlineArray_BYTE_512__System_Private_CoreLib ExtendedRegisters;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+_FLOATING_SAVE_AREA,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
-		"50a3a")]
-	public unsafe partial struct _FLOATING_SAVE_AREA__System_Private_CoreLib
-	{
-		public uint ControlWord;
-		public uint StatusWord;
-		public uint TagWord;
-		public uint ErrorOffset;
-		public uint ErrorSelector;
-		public uint DataOffset;
-		public uint DataSelector;
-		public global::Interop.InlineArray_BYTE_80__System_Private_CoreLib RegisterArea;
-		public uint Cr0NpxState;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+InlineArray_BYTE_80,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d" +
-		"50a3a")]
-	public unsafe partial struct InlineArray_BYTE_80__System_Private_CoreLib
-	{
-		public byte elem_0;
-		public byte elem_1;
-		public byte elem_2;
-		public byte elem_3;
-		public byte elem_4;
-		public byte elem_5;
-		public byte elem_6;
-		public byte elem_7;
-		public byte elem_8;
-		public byte elem_9;
-		public byte elem_10;
-		public byte elem_11;
-		public byte elem_12;
-		public byte elem_13;
-		public byte elem_14;
-		public byte elem_15;
-		public byte elem_16;
-		public byte elem_17;
-		public byte elem_18;
-		public byte elem_19;
-		public byte elem_20;
-		public byte elem_21;
-		public byte elem_22;
-		public byte elem_23;
-		public byte elem_24;
-		public byte elem_25;
-		public byte elem_26;
-		public byte elem_27;
-		public byte elem_28;
-		public byte elem_29;
-		public byte elem_30;
-		public byte elem_31;
-		public byte elem_32;
-		public byte elem_33;
-		public byte elem_34;
-		public byte elem_35;
-		public byte elem_36;
-		public byte elem_37;
-		public byte elem_38;
-		public byte elem_39;
-		public byte elem_40;
-		public byte elem_41;
-		public byte elem_42;
-		public byte elem_43;
-		public byte elem_44;
-		public byte elem_45;
-		public byte elem_46;
-		public byte elem_47;
-		public byte elem_48;
-		public byte elem_49;
-		public byte elem_50;
-		public byte elem_51;
-		public byte elem_52;
-		public byte elem_53;
-		public byte elem_54;
-		public byte elem_55;
-		public byte elem_56;
-		public byte elem_57;
-		public byte elem_58;
-		public byte elem_59;
-		public byte elem_60;
-		public byte elem_61;
-		public byte elem_62;
-		public byte elem_63;
-		public byte elem_64;
-		public byte elem_65;
-		public byte elem_66;
-		public byte elem_67;
-		public byte elem_68;
-		public byte elem_69;
-		public byte elem_70;
-		public byte elem_71;
-		public byte elem_72;
-		public byte elem_73;
-		public byte elem_74;
-		public byte elem_75;
-		public byte elem_76;
-		public byte elem_77;
-		public byte elem_78;
-		public byte elem_79;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+InlineArray_BYTE_512,System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11" +
-		"d50a3a")]
-	public unsafe partial struct InlineArray_BYTE_512__System_Private_CoreLib
-	{
-		public byte elem_0;
-		public byte elem_1;
-		public byte elem_2;
-		public byte elem_3;
-		public byte elem_4;
-		public byte elem_5;
-		public byte elem_6;
-		public byte elem_7;
-		public byte elem_8;
-		public byte elem_9;
-		public byte elem_10;
-		public byte elem_11;
-		public byte elem_12;
-		public byte elem_13;
-		public byte elem_14;
-		public byte elem_15;
-		public byte elem_16;
-		public byte elem_17;
-		public byte elem_18;
-		public byte elem_19;
-		public byte elem_20;
-		public byte elem_21;
-		public byte elem_22;
-		public byte elem_23;
-		public byte elem_24;
-		public byte elem_25;
-		public byte elem_26;
-		public byte elem_27;
-		public byte elem_28;
-		public byte elem_29;
-		public byte elem_30;
-		public byte elem_31;
-		public byte elem_32;
-		public byte elem_33;
-		public byte elem_34;
-		public byte elem_35;
-		public byte elem_36;
-		public byte elem_37;
-		public byte elem_38;
-		public byte elem_39;
-		public byte elem_40;
-		public byte elem_41;
-		public byte elem_42;
-		public byte elem_43;
-		public byte elem_44;
-		public byte elem_45;
-		public byte elem_46;
-		public byte elem_47;
-		public byte elem_48;
-		public byte elem_49;
-		public byte elem_50;
-		public byte elem_51;
-		public byte elem_52;
-		public byte elem_53;
-		public byte elem_54;
-		public byte elem_55;
-		public byte elem_56;
-		public byte elem_57;
-		public byte elem_58;
-		public byte elem_59;
-		public byte elem_60;
-		public byte elem_61;
-		public byte elem_62;
-		public byte elem_63;
-		public byte elem_64;
-		public byte elem_65;
-		public byte elem_66;
-		public byte elem_67;
-		public byte elem_68;
-		public byte elem_69;
-		public byte elem_70;
-		public byte elem_71;
-		public byte elem_72;
-		public byte elem_73;
-		public byte elem_74;
-		public byte elem_75;
-		public byte elem_76;
-		public byte elem_77;
-		public byte elem_78;
-		public byte elem_79;
-		public byte elem_80;
-		public byte elem_81;
-		public byte elem_82;
-		public byte elem_83;
-		public byte elem_84;
-		public byte elem_85;
-		public byte elem_86;
-		public byte elem_87;
-		public byte elem_88;
-		public byte elem_89;
-		public byte elem_90;
-		public byte elem_91;
-		public byte elem_92;
-		public byte elem_93;
-		public byte elem_94;
-		public byte elem_95;
-		public byte elem_96;
-		public byte elem_97;
-		public byte elem_98;
-		public byte elem_99;
-		public byte elem_100;
-		public byte elem_101;
-		public byte elem_102;
-		public byte elem_103;
-		public byte elem_104;
-		public byte elem_105;
-		public byte elem_106;
-		public byte elem_107;
-		public byte elem_108;
-		public byte elem_109;
-		public byte elem_110;
-		public byte elem_111;
-		public byte elem_112;
-		public byte elem_113;
-		public byte elem_114;
-		public byte elem_115;
-		public byte elem_116;
-		public byte elem_117;
-		public byte elem_118;
-		public byte elem_119;
-		public byte elem_120;
-		public byte elem_121;
-		public byte elem_122;
-		public byte elem_123;
-		public byte elem_124;
-		public byte elem_125;
-		public byte elem_126;
-		public byte elem_127;
-		public byte elem_128;
-		public byte elem_129;
-		public byte elem_130;
-		public byte elem_131;
-		public byte elem_132;
-		public byte elem_133;
-		public byte elem_134;
-		public byte elem_135;
-		public byte elem_136;
-		public byte elem_137;
-		public byte elem_138;
-		public byte elem_139;
-		public byte elem_140;
-		public byte elem_141;
-		public byte elem_142;
-		public byte elem_143;
-		public byte elem_144;
-		public byte elem_145;
-		public byte elem_146;
-		public byte elem_147;
-		public byte elem_148;
-		public byte elem_149;
-		public byte elem_150;
-		public byte elem_151;
-		public byte elem_152;
-		public byte elem_153;
-		public byte elem_154;
-		public byte elem_155;
-		public byte elem_156;
-		public byte elem_157;
-		public byte elem_158;
-		public byte elem_159;
-		public byte elem_160;
-		public byte elem_161;
-		public byte elem_162;
-		public byte elem_163;
-		public byte elem_164;
-		public byte elem_165;
-		public byte elem_166;
-		public byte elem_167;
-		public byte elem_168;
-		public byte elem_169;
-		public byte elem_170;
-		public byte elem_171;
-		public byte elem_172;
-		public byte elem_173;
-		public byte elem_174;
-		public byte elem_175;
-		public byte elem_176;
-		public byte elem_177;
-		public byte elem_178;
-		public byte elem_179;
-		public byte elem_180;
-		public byte elem_181;
-		public byte elem_182;
-		public byte elem_183;
-		public byte elem_184;
-		public byte elem_185;
-		public byte elem_186;
-		public byte elem_187;
-		public byte elem_188;
-		public byte elem_189;
-		public byte elem_190;
-		public byte elem_191;
-		public byte elem_192;
-		public byte elem_193;
-		public byte elem_194;
-		public byte elem_195;
-		public byte elem_196;
-		public byte elem_197;
-		public byte elem_198;
-		public byte elem_199;
-		public byte elem_200;
-		public byte elem_201;
-		public byte elem_202;
-		public byte elem_203;
-		public byte elem_204;
-		public byte elem_205;
-		public byte elem_206;
-		public byte elem_207;
-		public byte elem_208;
-		public byte elem_209;
-		public byte elem_210;
-		public byte elem_211;
-		public byte elem_212;
-		public byte elem_213;
-		public byte elem_214;
-		public byte elem_215;
-		public byte elem_216;
-		public byte elem_217;
-		public byte elem_218;
-		public byte elem_219;
-		public byte elem_220;
-		public byte elem_221;
-		public byte elem_222;
-		public byte elem_223;
-		public byte elem_224;
-		public byte elem_225;
-		public byte elem_226;
-		public byte elem_227;
-		public byte elem_228;
-		public byte elem_229;
-		public byte elem_230;
-		public byte elem_231;
-		public byte elem_232;
-		public byte elem_233;
-		public byte elem_234;
-		public byte elem_235;
-		public byte elem_236;
-		public byte elem_237;
-		public byte elem_238;
-		public byte elem_239;
-		public byte elem_240;
-		public byte elem_241;
-		public byte elem_242;
-		public byte elem_243;
-		public byte elem_244;
-		public byte elem_245;
-		public byte elem_246;
-		public byte elem_247;
-		public byte elem_248;
-		public byte elem_249;
-		public byte elem_250;
-		public byte elem_251;
-		public byte elem_252;
-		public byte elem_253;
-		public byte elem_254;
-		public byte elem_255;
-		public byte elem_256;
-		public byte elem_257;
-		public byte elem_258;
-		public byte elem_259;
-		public byte elem_260;
-		public byte elem_261;
-		public byte elem_262;
-		public byte elem_263;
-		public byte elem_264;
-		public byte elem_265;
-		public byte elem_266;
-		public byte elem_267;
-		public byte elem_268;
-		public byte elem_269;
-		public byte elem_270;
-		public byte elem_271;
-		public byte elem_272;
-		public byte elem_273;
-		public byte elem_274;
-		public byte elem_275;
-		public byte elem_276;
-		public byte elem_277;
-		public byte elem_278;
-		public byte elem_279;
-		public byte elem_280;
-		public byte elem_281;
-		public byte elem_282;
-		public byte elem_283;
-		public byte elem_284;
-		public byte elem_285;
-		public byte elem_286;
-		public byte elem_287;
-		public byte elem_288;
-		public byte elem_289;
-		public byte elem_290;
-		public byte elem_291;
-		public byte elem_292;
-		public byte elem_293;
-		public byte elem_294;
-		public byte elem_295;
-		public byte elem_296;
-		public byte elem_297;
-		public byte elem_298;
-		public byte elem_299;
-		public byte elem_300;
-		public byte elem_301;
-		public byte elem_302;
-		public byte elem_303;
-		public byte elem_304;
-		public byte elem_305;
-		public byte elem_306;
-		public byte elem_307;
-		public byte elem_308;
-		public byte elem_309;
-		public byte elem_310;
-		public byte elem_311;
-		public byte elem_312;
-		public byte elem_313;
-		public byte elem_314;
-		public byte elem_315;
-		public byte elem_316;
-		public byte elem_317;
-		public byte elem_318;
-		public byte elem_319;
-		public byte elem_320;
-		public byte elem_321;
-		public byte elem_322;
-		public byte elem_323;
-		public byte elem_324;
-		public byte elem_325;
-		public byte elem_326;
-		public byte elem_327;
-		public byte elem_328;
-		public byte elem_329;
-		public byte elem_330;
-		public byte elem_331;
-		public byte elem_332;
-		public byte elem_333;
-		public byte elem_334;
-		public byte elem_335;
-		public byte elem_336;
-		public byte elem_337;
-		public byte elem_338;
-		public byte elem_339;
-		public byte elem_340;
-		public byte elem_341;
-		public byte elem_342;
-		public byte elem_343;
-		public byte elem_344;
-		public byte elem_345;
-		public byte elem_346;
-		public byte elem_347;
-		public byte elem_348;
-		public byte elem_349;
-		public byte elem_350;
-		public byte elem_351;
-		public byte elem_352;
-		public byte elem_353;
-		public byte elem_354;
-		public byte elem_355;
-		public byte elem_356;
-		public byte elem_357;
-		public byte elem_358;
-		public byte elem_359;
-		public byte elem_360;
-		public byte elem_361;
-		public byte elem_362;
-		public byte elem_363;
-		public byte elem_364;
-		public byte elem_365;
-		public byte elem_366;
-		public byte elem_367;
-		public byte elem_368;
-		public byte elem_369;
-		public byte elem_370;
-		public byte elem_371;
-		public byte elem_372;
-		public byte elem_373;
-		public byte elem_374;
-		public byte elem_375;
-		public byte elem_376;
-		public byte elem_377;
-		public byte elem_378;
-		public byte elem_379;
-		public byte elem_380;
-		public byte elem_381;
-		public byte elem_382;
-		public byte elem_383;
-		public byte elem_384;
-		public byte elem_385;
-		public byte elem_386;
-		public byte elem_387;
-		public byte elem_388;
-		public byte elem_389;
-		public byte elem_390;
-		public byte elem_391;
-		public byte elem_392;
-		public byte elem_393;
-		public byte elem_394;
-		public byte elem_395;
-		public byte elem_396;
-		public byte elem_397;
-		public byte elem_398;
-		public byte elem_399;
-		public byte elem_400;
-		public byte elem_401;
-		public byte elem_402;
-		public byte elem_403;
-		public byte elem_404;
-		public byte elem_405;
-		public byte elem_406;
-		public byte elem_407;
-		public byte elem_408;
-		public byte elem_409;
-		public byte elem_410;
-		public byte elem_411;
-		public byte elem_412;
-		public byte elem_413;
-		public byte elem_414;
-		public byte elem_415;
-		public byte elem_416;
-		public byte elem_417;
-		public byte elem_418;
-		public byte elem_419;
-		public byte elem_420;
-		public byte elem_421;
-		public byte elem_422;
-		public byte elem_423;
-		public byte elem_424;
-		public byte elem_425;
-		public byte elem_426;
-		public byte elem_427;
-		public byte elem_428;
-		public byte elem_429;
-		public byte elem_430;
-		public byte elem_431;
-		public byte elem_432;
-		public byte elem_433;
-		public byte elem_434;
-		public byte elem_435;
-		public byte elem_436;
-		public byte elem_437;
-		public byte elem_438;
-		public byte elem_439;
-		public byte elem_440;
-		public byte elem_441;
-		public byte elem_442;
-		public byte elem_443;
-		public byte elem_444;
-		public byte elem_445;
-		public byte elem_446;
-		public byte elem_447;
-		public byte elem_448;
-		public byte elem_449;
-		public byte elem_450;
-		public byte elem_451;
-		public byte elem_452;
-		public byte elem_453;
-		public byte elem_454;
-		public byte elem_455;
-		public byte elem_456;
-		public byte elem_457;
-		public byte elem_458;
-		public byte elem_459;
-		public byte elem_460;
-		public byte elem_461;
-		public byte elem_462;
-		public byte elem_463;
-		public byte elem_464;
-		public byte elem_465;
-		public byte elem_466;
-		public byte elem_467;
-		public byte elem_468;
-		public byte elem_469;
-		public byte elem_470;
-		public byte elem_471;
-		public byte elem_472;
-		public byte elem_473;
-		public byte elem_474;
-		public byte elem_475;
-		public byte elem_476;
-		public byte elem_477;
-		public byte elem_478;
-		public byte elem_479;
-		public byte elem_480;
-		public byte elem_481;
-		public byte elem_482;
-		public byte elem_483;
-		public byte elem_484;
-		public byte elem_485;
-		public byte elem_486;
-		public byte elem_487;
-		public byte elem_488;
-		public byte elem_489;
-		public byte elem_490;
-		public byte elem_491;
-		public byte elem_492;
-		public byte elem_493;
-		public byte elem_494;
-		public byte elem_495;
-		public byte elem_496;
-		public byte elem_497;
-		public byte elem_498;
-		public byte elem_499;
-		public byte elem_500;
-		public byte elem_501;
-		public byte elem_502;
-		public byte elem_503;
-		public byte elem_504;
-		public byte elem_505;
-		public byte elem_506;
-		public byte elem_507;
-		public byte elem_508;
-		public byte elem_509;
-		public byte elem_510;
-		public byte elem_511;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+_SYSTEM_INFO,System.Private.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" +
-		"")]
-	public unsafe partial struct _SYSTEM_INFO__System_Private_Threading
-	{
-		public uint dwOemId;
-		public uint dwPageSize;
-		public global::System.IntPtr lpMinimumApplicationAddress;
-		public global::System.IntPtr lpMaximumApplicationAddress;
-		public global::System.UIntPtr dwActiveProcessorMask;
-		public uint dwNumberOfProcessors;
-		public uint dwProcessorType;
-		public uint dwAllocationGranularity;
-		public ushort wProcessorLevel;
-		public ushort wProcessorRevision;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+_MEMORY_BASIC_INFORMATION,System.Private.Threading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03" +
-		"f5f7f11d50a3a")]
-	public unsafe partial struct _MEMORY_BASIC_INFORMATION__System_Private_Threading
-	{
-		public global::System.IntPtr BaseAddress;
-		public global::System.IntPtr AllocationBase;
-		public uint AllocationProtect;
-		public global::System.UIntPtr RegionSize;
-		public uint State;
-		public uint Protect;
-		public uint Type;
-	}
-}
-
 namespace Interop.mincore
 {
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+EventData,System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKeyToken=b03f5f7f" +
-		"11d50a3a")]
-	public unsafe partial struct EventData__System_Diagnostics_Tracing
-	{
-		public ulong Ptr;
-		public uint Size;
-		public uint Reserved;
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+EVENT_INFO_CLASS,System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKeyToken=b" +
-		"03f5f7f11d50a3a")]
-	public enum EVENT_INFO_CLASS__System_Diagnostics_Tracing
-	{
-		BinaryTrackInfo = 0,
-		SetEnableAllKeywords = 1,
-		SetTraits = 2,
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+EVENT_FILTER_DESCRIPTOR,System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKey" +
-		"Token=b03f5f7f11d50a3a")]
-	public unsafe partial struct EVENT_FILTER_DESCRIPTOR__System_Diagnostics_Tracing
-	{
-		public ulong Ptr;
-		public uint Size;
-		public uint Type;
-	}
-
-	// Unmanaged Function Pointer - Calling Convention StdCall
-	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+EtwEnableCallback,System.Diagnostics.Tracing, Version=4.0.20.0, Culture=neutral, PublicKeyToken=" +
-		"b03f5f7f11d50a3a")]
-	public unsafe delegate void EtwEnableCallback__System_Diagnostics_Tracing(
-				ref global::System.Guid sourceId, 
-				int isEnabled, 
-				byte level, 
-				ulong matchAnyKeywords, 
-				ulong matchAllKeywords, 
-				global::Interop.mincore.EVENT_FILTER_DESCRIPTOR__System_Diagnostics_Tracing* filterData, 
-				global::System.IntPtr callbackContext);
-
 	[global::System.Runtime.InteropServices.StructLayout(global::System.Runtime.InteropServices.LayoutKind.Sequential, CharSet=global::System.Runtime.InteropServices.CharSet.Unicode)]
 	[global::System.Runtime.InteropServices.McgRedirectedType("Interop+mincore+CPINFOEXW,System.Text.Encoding.CodePages, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5" +
 		"f7f11d50a3a")]
@@ -854,66 +101,6 @@ namespace System.Net.Http
 		"f7f11d50a3a")]
 	public unsafe interface IHttpBaseProtocolFilter2__System_Net_Http
 	{
-	}
-}
-
-namespace System.Runtime.InteropServices
-{
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IMarshal,System.Runtime.WindowsRuntime, Version=4.0.10.0, Culture=neutral, Public" +
-		"KeyToken=b77a5c561934e089")]
-	public unsafe interface IMarshal__System_Runtime_WindowsRuntime
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetUnmarshalClass(
-					ref global::System.Guid riid, 
-					global::System.IntPtr pv, 
-					uint dwDestContext, 
-					global::System.IntPtr pvDestContext, 
-					uint mshlFlags, 
-					out global::System.Guid pCid);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetMarshalSizeMax(
-					ref global::System.Guid riid, 
-					global::System.IntPtr pv, 
-					uint dwDestContext, 
-					global::System.IntPtr pvDestContext, 
-					uint mshlflags, 
-					out uint pSize);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void MarshalInterface(
-					global::System.IntPtr pStm, 
-					ref global::System.Guid riid, 
-					global::System.IntPtr pv, 
-					uint dwDestContext, 
-					global::System.IntPtr pvDestContext, 
-					uint mshlflags);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void UnmarshalInterface(
-					global::System.IntPtr pStm, 
-					ref global::System.Guid riid, 
-					out global::System.IntPtr ppv);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void ReleaseMarshalData(global::System.IntPtr pStm);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void DisconnectObject(uint dwReserved);
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.IAgileObject,System.Runtime.WindowsRuntime, Version=4.0.10.0, Culture=neutral, Pu" +
-		"blicKeyToken=b77a5c561934e089")]
-	public unsafe interface IAgileObject__System_Runtime_WindowsRuntime
-	{
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.HSTRING,System.Private.Interop, Version=4.0.0.0, Culture=neutral, PublicKeyToken=" +
-		"b03f5f7f11d50a3a")]
-	public unsafe partial struct HSTRING__System_Private_Interop
-	{
-		public global::System.IntPtr handle;
 	}
 }
 
@@ -1169,27 +356,6 @@ namespace System.Runtime.InteropServices.ComTypes
 		TKIND_ALIAS = 6,
 		TKIND_UNION = 7,
 		TKIND_MAX = 8,
-	}
-}
-
-namespace System.Runtime.InteropServices.WindowsRuntime
-{
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.WindowsRuntime.IActivationFactory,System.Private.Interop, Version=4.0.0.0, Cultur" +
-		"e=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("System.Private.Interop, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a")]
-	public unsafe interface IActivationFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		object ActivateInstance();
-	}
-
-	[global::System.Runtime.InteropServices.McgRedirectedType("System.Runtime.InteropServices.WindowsRuntime.IBufferByteAccess,System.Runtime.WindowsRuntime, Version=4.0.10.0," +
-		" Culture=neutral, PublicKeyToken=b77a5c561934e089")]
-	public unsafe interface IBufferByteAccess__System_Runtime_WindowsRuntime
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr GetBuffer();
 	}
 }
 
@@ -1817,7 +983,9 @@ namespace Windows.ApplicationModel.Activation
 		ComponentUI = 1007,
 		ProtocolForResults = 1009,
 		ToastNotification = 1010,
+		Print3DWorkflow = 1011,
 		DialReceiver = 1012,
+		DevicePairing = 1013,
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -2468,6 +1636,50 @@ namespace Windows.ApplicationModel.Core
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICoreApplication
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Id")]
+		string get_Id();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Suspending")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Suspending(global::System.EventHandler<global::Windows.ApplicationModel.SuspendingEventArgs> handler);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Suspending")]
+		void remove_Suspending(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Resuming")]
+		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Resuming(global::System.EventHandler<object> handler);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Resuming")]
+		void remove_Resuming(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
+		global::Windows.Foundation.Collections.IPropertySet get_Properties();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.ApplicationModel.Core.CoreApplicationView GetCurrentView();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void Run(global::Windows.ApplicationModel.Core.IFrameworkViewSource viewSource);
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void RunWithActivationFactories(global::Windows.Foundation.IGetActivationFactory activationFactoryCallback);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IFrameworkViewSource
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ICoreApplicationExit
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -2511,6 +1723,17 @@ namespace Windows.ApplicationModel.Core
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICoreApplicationUseCount
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void IncrementApplicationUseCount();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		void DecrementApplicationUseCount();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ICoreImmersiveApplication
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -2525,61 +1748,6 @@ namespace Windows.ApplicationModel.Core
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "MainView")]
 		global::Windows.ApplicationModel.Core.CoreApplicationView get_MainView();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ICoreApplicationUseCount
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void IncrementApplicationUseCount();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void DecrementApplicationUseCount();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ICoreApplication
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Id")]
-		string get_Id();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Suspending")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Suspending(global::System.EventHandler<global::Windows.ApplicationModel.SuspendingEventArgs> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Suspending")]
-		void remove_Suspending(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventAdd, "Resuming")]
-		global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken add_Resuming(global::System.EventHandler<object> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.EventRemove, "Resuming")]
-		void remove_Resuming(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Properties")]
-		global::Windows.Foundation.Collections.IPropertySet get_Properties();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.ApplicationModel.Core.CoreApplicationView GetCurrentView();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void Run(global::Windows.ApplicationModel.Core.IFrameworkViewSource viewSource);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void RunWithActivationFactories(global::Windows.Foundation.IGetActivationFactory activationFactoryCallback);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IFrameworkViewSource
-	{
 	}
 }
 
@@ -3112,190 +2280,6 @@ namespace Windows.Devices.Enumeration.Pnp
 
 namespace Windows.Foundation
 {
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Foundation.IWwwFormUrlDecoderEntry>))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class WwwFormUrlDecoder : global::System.__ComObject, global::Windows.Foundation.IWwwFormUrlDecoderRuntimeClass, global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>, global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Foundation.IWwwFormUrlDecoderEntry>, global::System.Collections.Generic.IEnumerable<global::Windows.Foundation.IWwwFormUrlDecoderEntry>
-	{
-		global::System.Collections.Generic.IEnumerator<global::Windows.Foundation.IWwwFormUrlDecoderEntry> global::System.Collections.Generic.IEnumerable<global::Windows.Foundation.IWwwFormUrlDecoderEntry>.GetEnumerator()
-		{
-			return (global::System.Collections.Generic.IEnumerator<global::Windows.Foundation.IWwwFormUrlDecoderEntry>)global::McgInterop.McgHelpers.GetGenericEnumerator(
-								this, 
-								typeof(global::System.Collections.Generic.IEnumerable<global::Windows.Foundation.IWwwFormUrlDecoderEntry>).TypeHandle
-							);
-		}
-
-		global::System.Collections.IEnumerator global::System.Collections.IEnumerable.GetEnumerator()
-		{
-			return global::McgInterop.McgHelpers.GetNonGenericEnumerator(this);
-		}
-
-		int global::System.Collections.Generic.IReadOnlyCollection<global::Windows.Foundation.IWwwFormUrlDecoderEntry>.Count
-		{
-			get
-			{
-				return global::McgInterop.McgHelpers.GetReadOnlyCollectionCount(
-									this, 
-									typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>).TypeHandle
-								);
-			}
-		}
-
-		global::Windows.Foundation.IWwwFormUrlDecoderEntry global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>.this[int index]
-		{
-			get
-			{
-				return global::System.Runtime.InteropServices.McgMarshal.FastCast<global::System.Runtime.InteropServices.WindowsRuntime.IReadOnlyListAdapter<global::Windows.Foundation.IWwwFormUrlDecoderEntry>>(global::System.Runtime.InteropServices.McgModuleManager.GetDynamicAdapter(
-										this, 
-										typeof(global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>).TypeHandle
-									))[index];
-			}
-		}
-
-		public WwwFormUrlDecoder(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IPropertyValue
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Type")]
-		global::Windows.Foundation.PropertyType get_Type();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "IsNumericScalar")]
-		bool get_IsNumericScalar();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		byte GetUInt8();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		short GetInt16();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		ushort GetUInt16();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		int GetInt32();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		uint GetUInt32();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		long GetInt64();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		ulong GetUInt64();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		float GetSingle();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		double GetDouble();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		char GetChar16();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool GetBoolean();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		string GetString();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.Guid GetGuid();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.DateTimeOffset GetDateTime();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.TimeSpan GetTimeSpan();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.Point GetPoint();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.Size GetSize();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.Rect GetRect();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetUInt8Array(out byte[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetInt16Array(out short[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetUInt16Array(out ushort[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetInt32Array(out int[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetUInt32Array(out uint[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetInt64Array(out long[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetUInt64Array(out ulong[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetSingleArray(out float[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetDoubleArray(out double[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetChar16Array(out char[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetBooleanArray(out bool[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetStringArray(out string[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetInspectableArray(out object[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetGuidArray(out global::System.Guid[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetDateTimeArray(out global::System.DateTimeOffset[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetTimeSpanArray(out global::System.TimeSpan[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetPointArray(out global::Windows.Foundation.Point[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetSizeArray(out global::Windows.Foundation.Size[] value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void GetRectArray(out global::Windows.Foundation.Rect[] value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IUriRuntimeClassFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateUri(string uri);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateWithRelativeUri(
-					string baseUri, 
-					string relativeUri);
-	}
-
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IUriEscapeStatics
@@ -3305,89 +2289,6 @@ namespace Windows.Foundation
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		string EscapeComponent(string toEscape);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IUriRuntimeClass
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "AbsoluteUri")]
-		string get_AbsoluteUri();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DisplayUri")]
-		string get_DisplayUri();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Domain")]
-		string get_Domain();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Extension")]
-		string get_Extension();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Fragment")]
-		string get_Fragment();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Host")]
-		string get_Host();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Password")]
-		string get_Password();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		string get_Path();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Query")]
-		string get_Query();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "QueryParsed")]
-		global::Windows.Foundation.WwwFormUrlDecoder get_QueryParsed();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RawUri")]
-		string get_RawUri();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "SchemeName")]
-		string get_SchemeName();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "UserName")]
-		string get_UserName();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Port")]
-		int get_Port();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Suspicious")]
-		bool get_Suspicious();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool Equals(global::System.Uri pUri);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.Uri CombineUri(string relativeUri);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IWwwFormUrlDecoderRuntimeClass : global::System.Collections.Generic.IEnumerable<global::Windows.Foundation.IWwwFormUrlDecoderEntry>, global::System.Collections.Generic.IReadOnlyList<global::Windows.Foundation.IWwwFormUrlDecoderEntry>
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IWwwFormUrlDecoderEntry
-	{
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -3413,187 +2314,8 @@ namespace Windows.Foundation
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IReferenceArray<T> : global::Windows.Foundation.IPropertyValue
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Value")]
-		T[] get_Value();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void TypedEventHandler<TSender, TResult>(
-				TSender sender, 
-				TResult args);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAsyncAction : global::Windows.Foundation.IAsyncInfo
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Completed")]
-		void put_Completed(global::Windows.Foundation.AsyncActionCompletedHandler handler);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAsyncInfo
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Id")]
-		uint get_Id();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Status")]
-		global::Windows.Foundation.AsyncStatus get_Status();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "ErrorCode")]
-		global::System.Exception get_ErrorCode();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void Cancel();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void Close();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void AsyncActionCompletedHandler(
-				global::Windows.Foundation.IAsyncAction asyncInfo, 
-				global::Windows.Foundation.AsyncStatus asyncStatus);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IGetActivationFactory
 	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IReference<T> : global::Windows.Foundation.IPropertyValue
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Value")]
-		T get_Value();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAsyncOperation<TResult> : global::Windows.Foundation.IAsyncInfo
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Completed")]
-		void put_Completed(global::Windows.Foundation.AsyncOperationCompletedHandler<TResult> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Completed")]
-		global::Windows.Foundation.AsyncOperationCompletedHandler<TResult> get_Completed();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		TResult GetResults();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void AsyncOperationCompletedHandler<TResult>(
-				global::Windows.Foundation.IAsyncOperation<TResult> asyncInfo, 
-				global::Windows.Foundation.AsyncStatus asyncStatus);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IAsyncOperationWithProgress<TResult, TProgress> : global::Windows.Foundation.IAsyncInfo
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Progress")]
-		void put_Progress(global::Windows.Foundation.AsyncOperationProgressHandler<TResult, TProgress> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Progress")]
-		global::Windows.Foundation.AsyncOperationProgressHandler<TResult, TProgress> get_Progress();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Completed")]
-		void put_Completed(global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<TResult, TProgress> handler);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Completed")]
-		global::Windows.Foundation.AsyncOperationWithProgressCompletedHandler<TResult, TProgress> get_Completed();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		TResult GetResults();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void AsyncOperationProgressHandler<TResult, TProgress>(
-				global::Windows.Foundation.IAsyncOperationWithProgress<TResult, TProgress> asyncInfo, 
-				TProgress progressInfo);
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe delegate void AsyncOperationWithProgressCompletedHandler<TResult, TProgress>(
-				global::Windows.Foundation.IAsyncOperationWithProgress<TResult, TProgress> asyncInfo, 
-				global::Windows.Foundation.AsyncStatus asyncStatus);
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum PropertyType
-	{
-		Empty = 0,
-		UInt8 = 1,
-		Int16 = 2,
-		UInt16 = 3,
-		Int32 = 4,
-		UInt32 = 5,
-		Int64 = 6,
-		UInt64 = 7,
-		Single = 8,
-		Double = 9,
-		Char16 = 10,
-		Boolean = 11,
-		String = 12,
-		Inspectable = 13,
-		DateTime = 14,
-		TimeSpan = 15,
-		Guid = 16,
-		Point = 17,
-		Size = 18,
-		Rect = 19,
-		OtherType = 20,
-		UInt8Array = 1025,
-		Int16Array = 1026,
-		UInt16Array = 1027,
-		Int32Array = 1028,
-		UInt32Array = 1029,
-		Int64Array = 1030,
-		UInt64Array = 1031,
-		SingleArray = 1032,
-		DoubleArray = 1033,
-		Char16Array = 1034,
-		BooleanArray = 1035,
-		StringArray = 1036,
-		InspectableArray = 1037,
-		DateTimeArray = 1038,
-		TimeSpanArray = 1039,
-		GuidArray = 1040,
-		PointArray = 1041,
-		SizeArray = 1042,
-		RectArray = 1043,
-		OtherTypeArray = 1044,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum AsyncStatus
-	{
-		Started = 0,
-		Completed = 1,
-		Canceled = 2,
-		Error = 3,
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
@@ -3615,25 +2337,6 @@ namespace Windows.Foundation.Collections
 {
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IIterator<T>
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
-		T get_Current();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HasCurrent")]
-		bool get_HasCurrent();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool MoveNext();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		uint GetMany(T[] items);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IPropertySet : global::Windows.Foundation.Collections.IObservableMap<string, object>, global::System.Collections.Generic.IDictionary<string, object>, global::System.Collections.Generic.IEnumerable<global::System.Collections.Generic.KeyValuePair<string, object>>
 	{
 	}
@@ -3647,19 +2350,6 @@ namespace Windows.Foundation.Collections
 
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		void remove_MapChanged(global::System.Runtime.InteropServices.WindowsRuntime.EventRegistrationToken token);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IKeyValuePair<K, V>
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Key")]
-		K get_Key();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Value")]
-		V get_Value();
 	}
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -4070,412 +2760,6 @@ namespace Windows.Foundation.Diagnostics
 		CompletionNotification = 0,
 		ProgressNotification = 1,
 		Execution = 2,
-	}
-}
-
-namespace Windows.Foundation.Metadata
-{
-	[global::System.AttributeUsage(global::System.AttributeTargets.Parameter, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class LengthIsAttribute : global::System.Attribute
-	{
-		public LengthIsAttribute(int indexLengthParameter)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.LengthIsAttribute\'.  Windows Runtime attribute types are not " +
-					"constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Method, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DefaultOverloadAttribute : global::System.Attribute
-	{
-		public DefaultOverloadAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DefaultOverloadAttribute\'.  Windows Runtime attribute types a" +
-					"re not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Method, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class OverloadAttribute : global::System.Attribute
-	{
-		public OverloadAttribute(string method)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.OverloadAttribute\'.  Windows Runtime attribute types are not " +
-					"constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Class | global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Delegate), AllowMultiple=true)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ContractVersionAttribute : global::System.Attribute
-	{
-		public ContractVersionAttribute(uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ContractVersionAttribute\'.  Windows Runtime attribute types a" +
-					"re not constructable.");
-		}
-
-		public ContractVersionAttribute(
-					global::System.Type contract, 
-					uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ContractVersionAttribute\'.  Windows Runtime attribute types a" +
-					"re not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Interface | global::System.AttributeTargets.Delegate), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class GuidAttribute : global::System.Attribute
-	{
-		public GuidAttribute(
-					uint a, 
-					ushort b, 
-					ushort c, 
-					byte d, 
-					byte e, 
-					byte f, 
-					byte g, 
-					byte h, 
-					byte i, 
-					byte j, 
-					byte k)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.GuidAttribute\'.  Windows Runtime attribute types are not cons" +
-					"tructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DualApiPartitionAttribute : global::System.Attribute
-	{
-		public DualApiPartitionAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.DualApiPartitionAttribute\'.  Windows Runtime attribute types " +
-					"are not constructable.");
-		}
-		public uint version;
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class MarshalingBehaviorAttribute : global::System.Attribute
-	{
-		public MarshalingBehaviorAttribute(global::Windows.Foundation.Metadata.MarshalingType behavior)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MarshalingBehaviorAttribute\'.  Windows Runtime attribute type" +
-					"s are not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=true)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ActivatableAttribute : global::System.Attribute
-	{
-		public ActivatableAttribute(uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-
-		public ActivatableAttribute(
-					uint version, 
-					global::System.Type type)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-
-		public ActivatableAttribute(
-					uint version, 
-					global::Windows.Foundation.Metadata.Platform platform)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-
-		public ActivatableAttribute(
-					global::System.Type type, 
-					uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-
-		public ActivatableAttribute(
-					global::System.Type type, 
-					uint version, 
-					global::System.Type contractName)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-
-		public ActivatableAttribute(
-					global::System.Type type, 
-					uint version, 
-					global::Windows.Foundation.Metadata.Platform platform)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ActivatableAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=true)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StaticAttribute : global::System.Attribute
-	{
-		public StaticAttribute(
-					global::System.Type type, 
-					uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.StaticAttribute\'.  Windows Runtime attribute types are not co" +
-					"nstructable.");
-		}
-
-		public StaticAttribute(
-					global::System.Type type, 
-					uint version, 
-					global::Windows.Foundation.Metadata.Platform platform)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.StaticAttribute\'.  Windows Runtime attribute types are not co" +
-					"nstructable.");
-		}
-
-		public StaticAttribute(
-					global::System.Type type, 
-					uint version, 
-					global::System.Type contractName)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.StaticAttribute\'.  Windows Runtime attribute types are not co" +
-					"nstructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ThreadingAttribute : global::System.Attribute
-	{
-		public ThreadingAttribute(global::Windows.Foundation.Metadata.ThreadingModel model)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ThreadingAttribute\'.  Windows Runtime attribute types are not" +
-					" constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Interface, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ExclusiveToAttribute : global::System.Attribute
-	{
-		public ExclusiveToAttribute(global::System.Type typeName)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ExclusiveToAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Class | global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Delegate), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class WebHostHiddenAttribute : global::System.Attribute
-	{
-		public WebHostHiddenAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.WebHostHiddenAttribute\'.  Windows Runtime attribute types are" +
-					" not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=true)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ComposableAttribute : global::System.Attribute
-	{
-		public ComposableAttribute(
-					global::System.Type type, 
-					global::Windows.Foundation.Metadata.CompositionType compositionType, 
-					uint version)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ComposableAttribute\'.  Windows Runtime attribute types are no" +
-					"t constructable.");
-		}
-
-		public ComposableAttribute(
-					global::System.Type type, 
-					global::Windows.Foundation.Metadata.CompositionType compositionType, 
-					uint version, 
-					global::Windows.Foundation.Metadata.Platform platform)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ComposableAttribute\'.  Windows Runtime attribute types are no" +
-					"t constructable.");
-		}
-
-		public ComposableAttribute(
-					global::System.Type type, 
-					global::Windows.Foundation.Metadata.CompositionType compositionType, 
-					uint version, 
-					global::System.Type contract)
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ComposableAttribute\'.  Windows Runtime attribute types are no" +
-					"t constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class MuseAttribute : global::System.Attribute
-	{
-		public MuseAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.MuseAttribute\'.  Windows Runtime attribute types are not cons" +
-					"tructable.");
-		}
-		public uint Version;
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Assembly | global::System.AttributeTargets.Module 
-				| global::System.AttributeTargets.Class 
-				| global::System.AttributeTargets.Struct 
-				| global::System.AttributeTargets.Enum 
-				| global::System.AttributeTargets.Constructor 
-				| global::System.AttributeTargets.Method 
-				| global::System.AttributeTargets.Property 
-				| global::System.AttributeTargets.Field 
-				| global::System.AttributeTargets.Event 
-				| global::System.AttributeTargets.Interface 
-				| global::System.AttributeTargets.Parameter 
-				| global::System.AttributeTargets.Delegate 
-				| global::System.AttributeTargets.ReturnValue 
-				| global::System.AttributeTargets.GenericParameter), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class HasVariantAttribute : global::System.Attribute
-	{
-		public HasVariantAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.HasVariantAttribute\'.  Windows Runtime attribute types are no" +
-					"t constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Class, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class AllowMultipleAttribute : global::System.Attribute
-	{
-		public AllowMultipleAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.AllowMultipleAttribute\'.  Windows Runtime attribute types are" +
-					" not constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage(global::System.AttributeTargets.Enum, AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class ApiContractAttribute : global::System.Attribute
-	{
-		public ApiContractAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.ApiContractAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-	}
-
-	[global::System.AttributeUsage((global::System.AttributeTargets.Class | global::System.AttributeTargets.Method), AllowMultiple=false)]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class RemoteAsyncAttribute : global::System.Attribute
-	{
-		public RemoteAsyncAttribute()
-		{
-			throw new global::System.InvalidOperationException("Cannot construct type \'Windows.Foundation.Metadata.RemoteAsyncAttribute\'.  Windows Runtime attribute types are n" +
-					"ot constructable.");
-		}
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum MarshalingType
-	{
-		InvalidMarshaling = 0,
-		None = 1,
-		Agile = 2,
-		Standard = 3,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum Platform
-	{
-		Windows = 0,
-		WindowsPhone = 1,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum ThreadingModel
-	{
-		InvalidThreading = 0,
-		STA = 1,
-		MTA = 2,
-		Both = 3,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum CompositionType
-	{
-		Protected = 1,
-		Public = 2,
 	}
 }
 
@@ -4950,10 +3234,11 @@ namespace Windows.Graphics.Display
 {
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Graphics.Display.IDisplayInformation))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Graphics.Display.IDisplayInformation2))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Graphics.Display.IDisplayInformation3))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class DisplayInformation : global::System.__ComObject, global::Windows.Graphics.Display.IDisplayInformation, global::Windows.Graphics.Display.IDisplayInformation2
+	public unsafe sealed class DisplayInformation : global::System.__ComObject, global::Windows.Graphics.Display.IDisplayInformation, global::Windows.Graphics.Display.IDisplayInformation2, global::Windows.Graphics.Display.IDisplayInformation3
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CurrentOrientation")]
@@ -5023,6 +3308,15 @@ namespace Windows.Graphics.Display
 		public double get_RawPixelsPerViewPixel()
 		{
 			double __retVal = global::Windows.Graphics.Display.IDisplayInformation2__Impl.StubClass.get_RawPixelsPerViewPixel(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DiagonalSizeInInches")]
+		public global::System.Nullable<double> get_DiagonalSizeInInches()
+		{
+			global::System.Nullable<double> __retVal = global::Windows.Graphics.Display.IDisplayInformation3__Impl.StubClass.get_DiagonalSizeInInches(this);
 			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
 			return __retVal;
 		}
@@ -5133,6 +3427,15 @@ namespace Windows.Graphics.Display
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "RawPixelsPerViewPixel")]
 		double get_RawPixelsPerViewPixel();
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IDisplayInformation3
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DiagonalSizeInInches")]
+		global::System.Nullable<double> get_DiagonalSizeInInches();
 	}
 
 	[global::System.Flags]
@@ -5952,249 +4255,6 @@ namespace Windows.Security.ExchangeActiveSyncProvisioning
 
 namespace Windows.Storage
 {
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFile))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StorageFile : global::System.__ComObject, global::Windows.Storage.IStorageFile, global::Windows.Storage.Streams.IInputStreamReference, global::Windows.Storage.Streams.IRandomAccessStreamReference, global::Windows.Storage.IStorageItem, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageItemPropertiesWithProvider, global::Windows.Storage.IStorageFilePropertiesWithAvailability, global::Windows.Storage.IStorageFile2
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStream> OpenAsync(global::Windows.Storage.FileAccessMode accessMode)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStream> __retVal = global::Windows.Storage.IStorageFile__Impl.StubClass.OpenAsync(
-								this, 
-								accessMode
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction RenameAsync(
-					string desiredName, 
-					global::Windows.Storage.NameCollisionOption option)
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.RenameAsync(
-								this, 
-								desiredName, 
-								option
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction DeleteAsync()
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction DeleteAsync(global::Windows.Storage.StorageDeleteOption option)
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(
-								this, 
-								option
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> GetBasicPropertiesAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.GetBasicPropertiesAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Name")]
-		public string get_Name()
-		{
-			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Name(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		public string get_Path()
-		{
-			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Path(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DateCreated")]
-		public global::System.DateTimeOffset get_DateCreated()
-		{
-			global::System.DateTimeOffset __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_DateCreated(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public StorageFile(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageFolder))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IStorageItem))]
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.Search.IStorageFolderQueryOperations))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class StorageFolder : global::System.__ComObject, global::Windows.Storage.IStorageFolder, global::Windows.Storage.IStorageItem, global::Windows.Storage.Search.IStorageFolderQueryOperations, global::Windows.Storage.IStorageItemProperties, global::Windows.Storage.IStorageItemProperties2, global::Windows.Storage.IStorageItem2, global::Windows.Storage.IStorageFolder2, global::Windows.Storage.IStorageItemPropertiesWithProvider
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.CreateFileAsync(
-								this, 
-								desiredName
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.CreateFolderAsync(
-								this, 
-								desiredName, 
-								options
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.GetFileAsync(
-								this, 
-								name
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.GetItemAsync(
-								this, 
-								name
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> __retVal = global::Windows.Storage.IStorageFolder__Impl.StubClass.GetFilesAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction RenameAsync(
-					string desiredName, 
-					global::Windows.Storage.NameCollisionOption option)
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.RenameAsync(
-								this, 
-								desiredName, 
-								option
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction DeleteAsync()
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncAction DeleteAsync(global::Windows.Storage.StorageDeleteOption option)
-		{
-			global::Windows.Foundation.IAsyncAction __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.DeleteAsync(
-								this, 
-								option
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> GetBasicPropertiesAsync()
-		{
-			global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.GetBasicPropertiesAsync(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Name")]
-		public string get_Name()
-		{
-			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Name(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		public string get_Path()
-		{
-			string __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_Path(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DateCreated")]
-		public global::System.DateTimeOffset get_DateCreated()
-		{
-			global::System.DateTimeOffset __retVal = global::Windows.Storage.IStorageItem__Impl.StubClass.get_DateCreated(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		public global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync(
-					global::Windows.Storage.Search.CommonFileQuery query, 
-					uint startIndex, 
-					uint maxItemsToRetrieve)
-		{
-			global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> __retVal = global::Windows.Storage.Search.IStorageFolderQueryOperations__Impl.StubClass.GetFilesAsync(
-								this, 
-								query, 
-								startIndex, 
-								maxItemsToRetrieve
-							);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public StorageFolder(global::System.IntPtr dummy)
-		{
-		}
-	}
-
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.IApplicationData))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
@@ -6268,109 +4328,6 @@ namespace Windows.Storage
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFile : global::Windows.Storage.IStorageItem, global::Windows.Storage.Streams.IRandomAccessStreamReference, global::Windows.Storage.Streams.IInputStreamReference
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.Streams.IRandomAccessStream> OpenAsync(global::Windows.Storage.FileAccessMode accessMode);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItem
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncAction RenameAsync(
-					string desiredName, 
-					global::Windows.Storage.NameCollisionOption option);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncAction DeleteAsync();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncAction DeleteAsync(global::Windows.Storage.StorageDeleteOption option);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.FileProperties.BasicProperties> GetBasicPropertiesAsync();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Name")]
-		string get_Name();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Path")]
-		string get_Path();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "DateCreated")]
-		global::System.DateTimeOffset get_DateCreated();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItemProperties
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItemProperties2 : global::Windows.Storage.IStorageItemProperties
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItem2 : global::Windows.Storage.IStorageItem
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItemPropertiesWithProvider : global::Windows.Storage.IStorageItemProperties
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFilePropertiesWithAvailability
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFile2
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder : global::Windows.Storage.IStorageItem
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> CreateFileAsync(string desiredName);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFolder> CreateFolderAsync(
-					string desiredName, 
-					global::Windows.Storage.CreationCollisionOption options);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.StorageFile> GetFileAsync(string name);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::Windows.Storage.IStorageItem> GetItemAsync(string name);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolder2
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IApplicationDataStatics
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -6410,110 +4367,6 @@ namespace Windows.Storage
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IApplicationData3
 	{
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum NameCollisionOption
-	{
-		GenerateUniqueName = 0,
-		ReplaceExisting = 1,
-		FailIfExists = 2,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum StorageDeleteOption
-	{
-		Default = 0,
-		PermanentDelete = 1,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum FileAccessMode
-	{
-		Read = 0,
-		ReadWrite = 1,
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum CreationCollisionOption
-	{
-		GenerateUniqueName = 0,
-		ReplaceExisting = 1,
-		FailIfExists = 2,
-		OpenIfExists = 3,
-	}
-}
-
-namespace Windows.Storage.FileProperties
-{
-	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.Storage.FileProperties.IBasicProperties))]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class BasicProperties : global::System.__ComObject, global::Windows.Storage.FileProperties.IBasicProperties, global::Windows.Storage.FileProperties.IStorageItemExtraProperties
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Size")]
-		public ulong get_Size()
-		{
-			ulong __retVal = global::Windows.Storage.FileProperties.IBasicProperties__Impl.StubClass.get_Size(this);
-			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
-			return __retVal;
-		}
-
-		public BasicProperties(global::System.IntPtr dummy)
-		{
-		}
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBasicProperties
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Size")]
-		ulong get_Size();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageItemExtraProperties
-	{
-	}
-}
-
-namespace Windows.Storage.Search
-{
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IStorageFolderQueryOperations
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<global::System.Collections.Generic.IReadOnlyList<global::Windows.Storage.StorageFile>> GetFilesAsync(
-					global::Windows.Storage.Search.CommonFileQuery query, 
-					uint startIndex, 
-					uint maxItemsToRetrieve);
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum CommonFileQuery
-	{
-		DefaultQuery = 0,
-		OrderByName = 1,
-		OrderByTitle = 2,
-		OrderByMusicProperties = 3,
-		OrderBySearchRank = 4,
-		OrderByDate = 5,
 	}
 }
 
@@ -6577,94 +4430,6 @@ namespace Windows.Storage.Streams
 
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IRandomAccessStreamReference
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IInputStreamReference
-	{
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IRandomAccessStream : global::System.IDisposable, global::Windows.Storage.Streams.IInputStream, global::Windows.Storage.Streams.IOutputStream
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Size")]
-		ulong get_Size();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Size")]
-		void put_Size(ulong value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Storage.Streams.IInputStream GetInputStreamAt(ulong position);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Storage.Streams.IOutputStream GetOutputStreamAt(ulong position);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Position")]
-		ulong get_Position();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void Seek(ulong position);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Storage.Streams.IRandomAccessStream CloneStream();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CanRead")]
-		bool get_CanRead();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CanWrite")]
-		bool get_CanWrite();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IInputStream : global::System.IDisposable
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperationWithProgress<global::Windows.Storage.Streams.IBuffer, uint> ReadAsync(
-					global::Windows.Storage.Streams.IBuffer buffer, 
-					uint count, 
-					global::Windows.Storage.Streams.InputStreamOptions options);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBuffer
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Capacity")]
-		uint get_Capacity();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Length")]
-		uint get_Length();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "Length")]
-		void put_Length(uint value);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IOutputStream : global::System.IDisposable
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperationWithProgress<uint, uint> WriteAsync(global::Windows.Storage.Streams.IBuffer buffer);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::Windows.Foundation.IAsyncOperation<bool> FlushAsync();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IDataReaderStatics
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -6677,17 +4442,6 @@ namespace Windows.Storage.Streams
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		void ReadBytes(byte[] value);
-	}
-
-	[global::System.Flags]
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum InputStreamOptions : uint
-	{
-		None = 0x0u,
-		Partial = 0x1u,
-		ReadAhead = 0x2u,
 	}
 }
 
@@ -7025,7 +4779,7 @@ namespace Windows.UI.Core
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class CoreWindow : global::System.__ComObject, global::Windows.UI.Core.ICoreWindow, global::Windows.UI.Core.ICoreWindow2
+	public unsafe sealed class CoreWindow : global::System.__ComObject, global::Windows.UI.Core.ICoreWindow, global::Windows.UI.Core.ICoreWindow2, global::Windows.UI.Core.ICorePointerRedirector
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Dispatcher")]
@@ -7192,6 +4946,12 @@ namespace Windows.UI.Core
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface ICoreWindow2
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface ICorePointerRedirector
 	{
 	}
 
@@ -9496,10 +7256,11 @@ namespace Windows.UI.Xaml.Automation.Peers
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerProtected))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides2))]
 	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3))]
+	[global::System.Runtime.CompilerServices.DependencyReductionConditionallyDependent(typeof(global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4))]
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe class AutomationPeer : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerProtected, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer2, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides2, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer3, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3
+	public unsafe class AutomationPeer : global::Windows.UI.Xaml.DependencyObject, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerProtected, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer2, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides2, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer3, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides3, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeer4, global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4
 	{
 		object global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides.GetPatternCore(global::Windows.UI.Xaml.Automation.Peers.PatternInterface patternInterface)
 		{
@@ -10085,6 +7846,36 @@ namespace Windows.UI.Xaml.Automation.Peers
 			return __retVal;
 		}
 
+		global::Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4.GetLandmarkTypeCore()
+		{
+			global::Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType __retVal_1 = this.GetLandmarkTypeCore();
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal_1;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		protected virtual global::Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType GetLandmarkTypeCore()
+		{
+			global::Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType __retVal = global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4__Impl.StubClass.GetLandmarkTypeCore(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
+		string global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4.GetLocalizedLandmarkTypeCore()
+		{
+			string __retVal_1 = this.GetLocalizedLandmarkTypeCore();
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal_1;
+		}
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		protected virtual string GetLocalizedLandmarkTypeCore()
+		{
+			string __retVal = global::Windows.UI.Xaml.Automation.Peers.IAutomationPeerOverrides4__Impl.StubClass.GetLocalizedLandmarkTypeCore(this);
+			global::System.Runtime.InteropServices.DebugAnnotations.PreviousCallContainsUserCode();
+			return __retVal;
+		}
+
 		public AutomationPeer(global::System.IntPtr dummy) : 
 				base(dummy)
 		{
@@ -10260,6 +8051,23 @@ namespace Windows.UI.Xaml.Automation.Peers
 	{
 	}
 
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IAutomationPeer4
+	{
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IAutomationPeerOverrides4
+	{
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		global::Windows.UI.Xaml.Automation.Peers.AutomationLandmarkType GetLandmarkTypeCore();
+
+		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
+		string GetLocalizedLandmarkTypeCore();
+	}
+
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
@@ -10379,6 +8187,19 @@ namespace Windows.UI.Xaml.Automation.Peers
 		PreviousSibling = 2,
 		FirstChild = 3,
 		LastChild = 4,
+	}
+
+	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public enum AutomationLandmarkType
+	{
+		None = 0,
+		Custom = 1,
+		Form = 2,
+		Main = 3,
+		Navigation = 4,
+		Search = 5,
 	}
 }
 
@@ -11872,66 +9693,6 @@ namespace Windows.UI.Xaml.Data
 {
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IPropertyChangedEventArgsFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstance(
-					string name, 
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IPropertyChangedEventArgs
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "PropertyName")]
-		string get_PropertyName();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface ICustomProperty
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Type")]
-		global::System.Type get_Type();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Name")]
-		string get_Name();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		object GetValue(object target);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetValue(
-					object target, 
-					object value);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		object GetIndexedValue(
-					object target, 
-					object index);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		void SetIndexedValue(
-					object target, 
-					object value, 
-					object index);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CanWrite")]
-		bool get_CanWrite();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "CanRead")]
-		bool get_CanRead();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IValueConverter
 	{
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
@@ -12209,92 +9970,6 @@ namespace Windows.UI.Xaml.Input
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
 	public unsafe interface IManipulationCompletedRoutedEventArgs
 	{
-	}
-}
-
-namespace Windows.UI.Xaml.Interop
-{
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface INotifyCollectionChangedEventArgsFactory
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		global::System.IntPtr CreateInstanceWithAllParameters(
-					global::System.Collections.Specialized.NotifyCollectionChangedAction action, 
-					global::System.Collections.IList newItems, 
-					global::System.Collections.IList oldItems, 
-					int newIndex, 
-					int oldIndex, 
-					global::System.IntPtr outer, 
-					out global::System.IntPtr inner);
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface INotifyCollectionChangedEventArgs
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Action")]
-		global::System.Collections.Specialized.NotifyCollectionChangedAction get_Action();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "NewItems")]
-		global::System.Collections.IList get_NewItems();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OldItems")]
-		global::System.Collections.IList get_OldItems();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "NewStartingIndex")]
-		int get_NewStartingIndex();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "OldStartingIndex")]
-		int get_OldStartingIndex();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBindableIterator
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Current")]
-		object get_Current();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "HasCurrent")]
-		bool get_HasCurrent();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool MoveNext();
-	}
-
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe interface IBindableVectorView : global::System.Collections.IEnumerable
-	{
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		object GetAt(uint index);
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertyGet, "Size")]
-		uint get_Size();
-
-		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
-		bool IndexOf(
-					object value, 
-					out uint index);
-	}
-
-	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]
-	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
-	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public enum TypeKind
-	{
-		Primitive = 0,
-		Metadata = 1,
-		Custom = 2,
 	}
 }
 
@@ -13186,7 +10861,7 @@ namespace Windows.Web.Http.Filters
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(65536)]
 	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
 	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
-	public unsafe sealed class HttpBaseProtocolFilter : global::System.__ComObject, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter, global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2
+	public unsafe sealed class HttpBaseProtocolFilter : global::System.__ComObject, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter, global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter2, global::Windows.Web.Http.Filters.IHttpBaseProtocolFilter3
 	{
 		public void Dispose()
 		{
@@ -13384,6 +11059,12 @@ namespace Windows.Web.Http.Filters
 		[global::System.Runtime.InteropServices.McgGeneratedMarshallingCode]
 		[global::System.Runtime.InteropServices.McgAccessor(global::System.Runtime.InteropServices.McgAccessorKind.PropertySet, "MaxVersion")]
 		void put_MaxVersion(global::Windows.Web.Http.HttpVersion value);
+	}
+
+	[global::Internal.Reflection.MetadataTransformed(global::Internal.Reflection.MetadataTransformation.OriginallyForeignObject)]
+	[global::Internal.Reflection.ExplicitScope("Windows, Version=255.255.255.255, Culture=neutral, PublicKeyToken=null, ContentType=WindowsRuntime")]
+	public unsafe interface IHttpBaseProtocolFilter3 : global::Windows.Web.Http.Filters.IHttpFilter, global::System.IDisposable
+	{
 	}
 
 	[global::System.Runtime.InteropServices.McgWindowsRuntimeVersion(0)]

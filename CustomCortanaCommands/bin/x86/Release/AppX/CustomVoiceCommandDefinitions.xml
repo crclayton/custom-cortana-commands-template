@@ -3,32 +3,7 @@
 <VoiceCommands xmlns="http://schemas.microsoft.com/voicecommands/1.2">
   <CommandSet xml:lang="en-us" Name="CustomCommands">
    <CommandPrefix> Listen Here </CommandPrefix>
-    <Example> Shut down, Hibernate </Example>
-    
-    <Command Name="ShutDown">
-      <Example> shut down, power off, I'm going to bed </Example>    
-      
-      <ListenFor>Shut down</ListenFor>
-      <ListenFor>Power off</ListenFor>
-      <ListenFor>I'm going to bed</ListenFor>
-    
-       <!-- this starts with "Alright" or "Okay" or something -->
-      <Feedback> I'll shut myself off now. </Feedback>
-      <Navigate/>    
-      
-    </Command>
-
-    <Command Name="Hibernate">
-      <Example> go to sleep, hibernate, suspend </Example>    
-      
-      <ListenFor> go to sleep </ListenFor>
-      <ListenFor> hibernate</ListenFor>
-      <ListenFor> suspend</ListenFor>
-    
-      <Feedback> I'll go to sleep now. </Feedback>
-      <Navigate/>    
-      
-    </Command>
+    <Example> Open File, Open Website </Example>
     
     
     <Command Name="OpenFile">
@@ -37,13 +12,7 @@
       <Feedback> Opening your file </Feedback>
       <Navigate/>          
     </Command>
-    
-        <Command Name="OpenFolder">
-      <Example> Open folder </Example>          
-      <ListenFor> Open folder </ListenFor>    
-      <Feedback> Opening your folder </Feedback>
-      <Navigate/>          
-    </Command>
+
 
     <Command Name="OpenWebsite">
       <Example> Open website </Example>          
@@ -52,33 +21,6 @@
       <Navigate/>          
     </Command>
 
-    <Command Name="OpenScript">
-      <Example> Open script </Example>          
-      <ListenFor> Open script </ListenFor>    
-      <Feedback> Opening your script </Feedback>
-      <Navigate/>          
-    </Command>
-    
-        <Command Name="OpenBatch">
-      <Example> Open Batch </Example>          
-      <ListenFor> Open Batch </ListenFor>    
-      <Feedback> Opening your Batch </Feedback>
-      <Navigate/>          
-    </Command>
-
-            <Command Name="OpenHTML">
-      <Example> Open HTML </Example>          
-      <ListenFor> Open HTML </ListenFor>    
-      <Feedback> Opening your HTML </Feedback>
-      <Navigate/>          
-    </Command>
-    
-                <Command Name="OpenHTA">
-      <Example> Open HTA </Example>          
-      <ListenFor> Open HTA </ListenFor>    
-      <Feedback> Opening your HTA </Feedback>
-      <Navigate/>          
-    </Command>
 
     
   </CommandSet>  
