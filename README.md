@@ -4,7 +4,7 @@ This is a simple template for how to register custom commands with Cortana on Wi
 
 ###Requirements
 
-This was built with **Visual Studio Community Edition 2015** with the **Windows Universal Platform application template**, and requires **developer mode enabled**.
+This was built with [**Visual Studio Community Edition 2015**](https://www.visualstudio.com/en-us/products/visual-studio-community-vs.aspx) with the [**Windows Universal Platform application template**](https://www.visualstudio.com/en-us/features/universal-windows-platform-vs.aspx), and requires **developer mode enabled**.
 
 ###Here's a short tutorial on how to create commands
 
