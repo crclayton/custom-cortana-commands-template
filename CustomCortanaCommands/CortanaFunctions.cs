@@ -10,6 +10,11 @@ using Windows.System;
 using Windows.Media.SpeechRecognition;
 using Windows.ApplicationModel.Activation;
 
+// for SendSerialData example
+using Windows.Devices.SerialCommunication;
+using Windows.Devices.Enumeration;
+using Windows.Storage.Streams;
+
 namespace CustomCortanaCommands
 {
 
@@ -27,15 +32,54 @@ namespace CustomCortanaCommands
             })}
             */
 
+            {"OpenWebsite", (Action)(async () => {
+                 Uri website = new Uri(@"http://www.crclayton.com");
+                 await Launcher.LaunchUriAsync(website);
+             })},
+
             {"OpenFile", (Action)(async () => {
                 StorageFile file = await Package.Current.InstalledLocation.GetFileAsync(@"Test.txt");
                 await Launcher.LaunchFileAsync(file);
             })},
 
-            {"OpenWebsite", (Action)(async () => { 
-                 Uri website = new Uri(@"http://www.reddit.com");
-                 await Launcher.LaunchUriAsync(website);
-             })},
+            {"CreateFile", (Action)(async () => {
+                StorageFolder storageFolder = ApplicationData.Current.LocalFolder;
+                StorageFile sampleFile = await storageFolder.CreateFileAsync(
+                    @"NewFile.txt", CreationCollisionOption.ReplaceExisting);
+
+                await storageFolder.GetFileAsync("NewFile.txt");
+                await FileIO.WriteTextAsync(sampleFile, "This file was created by Cortana at " + DateTime.Now);
+
+            })},
+
+            {"SendSerialData", (Action)(async () => {
+                string comPort = "COM3";
+                string serialMessage = "String sent to the COM port";
+
+                string selector = SerialDevice.GetDeviceSelector(comPort);
+                DeviceInformationCollection devices = await DeviceInformation.FindAllAsync(selector);
+
+                if(devices.Count == 0)
+                {
+                    MessageDialog popup = new MessageDialog($"No {comPort} device found.");
+                    await popup.ShowAsync();
+                    return;
+                }
+
+                DeviceInformation deviceInfo = devices[0];
+                SerialDevice serialDevice = await SerialDevice.FromIdAsync(deviceInfo.Id);
+                serialDevice.BaudRate = 9600;
+                serialDevice.DataBits = 8;
+                serialDevice.StopBits = SerialStopBitCount.Two;
+                serialDevice.Parity = SerialParity.None;
+
+                DataWriter dataWriter = new DataWriter(serialDevice.OutputStream);
+                dataWriter.WriteString(serialMessage);
+                await dataWriter.StoreAsync();
+                dataWriter.DetachStream();
+                dataWriter = null;
+            })},
+
         };
 
         /*

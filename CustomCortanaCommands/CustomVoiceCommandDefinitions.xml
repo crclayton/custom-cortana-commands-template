@@ -5,15 +5,6 @@
    <CommandPrefix> Listen Up </CommandPrefix>
     <Example> Open File, Open Website </Example>
     
-    
-    <Command Name="OpenFile">
-      <Example> Open file </Example>          
-      <ListenFor> Open file </ListenFor>    
-      <Feedback> Opening your file </Feedback>
-      <Navigate/>          
-    </Command>
-
-
     <Command Name="OpenWebsite">
       <Example> Open website </Example>          
       <ListenFor> Open website </ListenFor>    
@@ -21,8 +12,27 @@
       <Navigate/>          
     </Command>
 
+    <Command Name="OpenFile">
+      <Example> Open file </Example>
+      <ListenFor> Open file </ListenFor>
+      <Feedback> Opening your file </Feedback>
+      <Navigate/>
+    </Command>
 
-    
+    <Command Name="CreateFile">
+      <Example> Create file </Example>
+      <ListenFor> Create file </ListenFor>
+      <Feedback> Creating your file </Feedback>
+      <Navigate/>
+    </Command>
+
+    <Command Name="SendSerialData">
+      <Example> Send serial data </Example>
+      <ListenFor> Send serial data </ListenFor>
+      <Feedback> Sending serial data </Feedback>
+      <Navigate/>
+    </Command>
+
   </CommandSet>  
 
 </VoiceCommands>

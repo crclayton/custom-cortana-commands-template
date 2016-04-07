@@ -22,7 +22,7 @@
     <AppXManifest Include="C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-03-03T04:07:54.099</Modified>
+      <Modified>2016-04-07T01:35:39.715</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
@@ -70,15 +70,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.dll">
       <PackagePath>CustomCortanaCommands.dll</PackagePath>
-      <Modified>2016-03-03T04:07:53.639</Modified>
+      <Modified>2016-04-07T01:35:39.471</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomCortanaCommands.exe">
       <PackagePath>CustomCortanaCommands.exe</PackagePath>
-      <Modified>2016-03-03T04:07:54.072</Modified>
+      <Modified>2016-04-07T01:35:39.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\CustomVoiceCommandDefinitions.xml">
       <PackagePath>CustomVoiceCommandDefinitions.xml</PackagePath>
-      <Modified>2016-03-03T03:40:21.291</Modified>
+      <Modified>2016-04-07T01:14:32.202</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\charl\Source\Repos\custom-cortana-commands-template\CustomCortanaCommands\bin\x86\Release\ilc\resources.pri">
       <PackagePath>resources.pri</PackagePath>
