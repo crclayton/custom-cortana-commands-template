@@ -2,11 +2,11 @@
 
 This is a simple template for how to register custom commands with Cortana on Windows 10.
 
-**Examples include**
-1. Opening a website
-2. Opening a file
-3. Creating/modifiying a file
-4. Sending serial data
+#####Examples include:
+- Opening a website
+- Opening a file
+- Creating/modifiying a file
+- Sending serial data
 
 *Feel free to create pull requests with additional command templates!*
 
