@@ -8,7 +8,7 @@ This is a simple template for how to register custom commands with Cortana on Wi
 - Creating/modifiying a file
 - Sending serial data
 
-*Feel free to create pull requests with additional command templates!*
+***Feel free to create pull requests with additional command templates!***
 
 ###Requirements
 
