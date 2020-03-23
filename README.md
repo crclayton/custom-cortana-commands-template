@@ -7,6 +7,7 @@ This is a simple template for how to register custom commands with Cortana on Wi
 - Opening a file
 - Creating/modifiying a file
 - Sending serial data
+- Sending simple Pushover.Net notifications
 
 ***Feel free to create pull requests with additional command templates!***
 

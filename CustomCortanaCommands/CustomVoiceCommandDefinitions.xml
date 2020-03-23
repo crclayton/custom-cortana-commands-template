@@ -4,12 +4,19 @@
   <CommandSet xml:lang="en-us" Name="CustomCommands">
    <CommandPrefix> Listen Up </CommandPrefix>
     <Example> Open File, Open Website </Example>
-    
+
     <Command Name="OpenWebsite">
-      <Example> Open website </Example>          
-      <ListenFor> Open website </ListenFor>    
+      <Example> Open website </Example>
+      <ListenFor> Open website </ListenFor>
       <Feedback> Opening your website </Feedback>
-      <Navigate/>          
+      <Navigate/>
+    </Command>
+
+    <Command Name="PushIt">
+      <Example> PushIt </Example>
+      <ListenFor> Send Push </ListenFor>
+      <Feedback> Sending Pushover notification </Feedback>
+      <Navigate/>
     </Command>
 
     <Command Name="OpenFile">
@@ -33,6 +40,6 @@
       <Navigate/>
     </Command>
 
-  </CommandSet>  
+  </CommandSet>
 
 </VoiceCommands>
